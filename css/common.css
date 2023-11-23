@@ -33,6 +33,9 @@ h5,
 h6 {
   margin: 0;
 }
+:root {
+  --text-color: #2e2f42;
+}
 button {
   padding: 8px 12px;
   cursor: pointer;
@@ -56,7 +59,7 @@ li.item:not(:last-child) {
 }
 
 .item h2 {
-  color: #2e2f42;
+  color: var();
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -73,7 +76,7 @@ li.item:not(:last-child) {
 }
 .item ul > li {
   width: 100%;
-  color: #2e2f42;
+  color: var(--text-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -104,5 +107,24 @@ li.item:not(:last-child) {
   height: 100%;
   object-fit: cover;
 }
-
 /* task-2 */
+
+/* task-3 */
+#name-input {
+  width: 360px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin-bottom: 16px;
+}
+
+#name-input + h1 {
+  width: 360px;
+  font-size: 24px;
+  color: var(--text-color);
+  font-size: 24px;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+/* task-3 */
