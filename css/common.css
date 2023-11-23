@@ -3,7 +3,9 @@
 * {
   box-sizing: border-box;
 }
-
+:root {
+  --text-color: #2e2f42;
+}
 body {
   margin: 16px;
 
@@ -12,8 +14,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
-  color: #212121;
   line-height: 1.5;
+  color: var(--text-color);
+  font-weight: 400;
 }
 
 input {
@@ -33,9 +36,7 @@ h5,
 h6 {
   margin: 0;
 }
-:root {
-  --text-color: #2e2f42;
-}
+
 button {
   padding: 8px 12px;
   cursor: pointer;
@@ -59,7 +60,6 @@ li.item:not(:last-child) {
 }
 
 .item h2 {
-  color: var();
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -76,10 +76,8 @@ li.item:not(:last-child) {
 }
 .item ul > li {
   width: 100%;
-  color: var(--text-color);
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 8px 16px;
@@ -101,6 +99,10 @@ li.item:not(:last-child) {
 .gallery li {
   flex-basis: calc((100% - 48px) / 3);
   height: 300px;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 .gallery li img {
   width: 100%;
@@ -121,10 +123,46 @@ li.item:not(:last-child) {
 #name-input + h1 {
   width: 360px;
   font-size: 24px;
-  color: var(--text-color);
   font-size: 24px;
   font-style: normal;
   line-height: 1.33;
   letter-spacing: 0.04em;
 }
 /* task-3 */
+
+/* task-4 */
+.login-form {
+  align-items: flex-start;
+}
+.login-form label:first-child {
+  margin-bottom: 8px;
+}
+.login-form label {
+  width: 100%;
+}
+
+form.login-form input,
+form.login-form button {
+  width: 100%;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font: inherit;
+}
+.login-form input {
+  margin-top: 8px;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+form.login-form button {
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  width: fit-content;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+/* task-4 */
