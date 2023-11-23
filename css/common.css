@@ -74,7 +74,6 @@ li.item:not(:last-child) {
 .item ul > li {
   width: 100%;
   color: #2e2f42;
-  font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -85,3 +84,25 @@ li.item:not(:last-child) {
   border: 1px solid #808080;
 }
 /* task-1 */
+
+/* task-2 */
+.gallery {
+  max-width: 1158px;
+  padding: 100px 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.gallery li {
+  flex-basis: calc((100% - 48px) / 3);
+  height: 300px;
+}
+.gallery li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* task-2 */
