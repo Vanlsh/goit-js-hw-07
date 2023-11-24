@@ -9,8 +9,7 @@ const onSubmit = (event) => {
     userData.email = email;
     userData.password = password;
     console.log(userData);
-    event.target.elements.email.value = "";
-    event.target.elements.password.value = "";
+    event.target.reset();
   } else {
     alert("All form fields must be filled in");
   }
